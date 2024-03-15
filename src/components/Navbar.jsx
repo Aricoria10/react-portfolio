@@ -1,23 +1,29 @@
-import { Link } from "react-router-dom";
-
-const Navbar = () => {
+export default function Navbar() {
+  const linkStyle = { border: '1px black', padding: '5px' };
   return (
-        <div>
-          <>
-            <Link to="/about">
-              About me
-            </Link>
-            <Link to="/portfolio">
-              Portfolio
-            </Link>
-            <Link to="/contact">
-              Contact
-            </Link>
-            <Link to="/resume">
-              Resume
-            </Link>
-          </>
-        </div>
+    <nav className="main-header-menu">
+    <section
+      style={{
+        display: 'flex',
+        fontFamily: 'helvetica',
+        flexDirection: 'row',
+        alignItems: 'flex-start',
+        justifyContent: 'flex-start',
+      }}
+    >
+      <div style={linkStyle}>
+        <a href="./portfolio">Portfolio</a>
+      </div>
+      <div style={linkStyle}>
+        <a href="./contact">Contact</a>
+      </div>
+      <div style={linkStyle}>
+        <a href="./resume">Resume</a>
+      </div>
+      <div style={linkStyle}>
+        <a href="./about">About</a>
+      </div>
+    </section>
+  </nav>
   );
-};
-export default Navbar;
+}

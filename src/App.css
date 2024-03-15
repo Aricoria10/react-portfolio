@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: rgba(245, 245, 245, 0.356);
 }
 
 .bucket-app {
@@ -16,7 +16,7 @@ body {
   justify-content: flex-start;
   width: 800px;
   min-height: 600px;
-  background: black;
+  background: purple;
   text-align: center;
   margin: 32px auto;
   border-radius: 20px;
